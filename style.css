@@ -1,0 +1,98 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: arial;
+}
+
+label, input {
+	display: block;
+	line-height: 30px;
+	height: 30px;
+	outline: none;
+	font-size: 13px;
+	width: 99%;
+}
+
+form {
+	width: 330px;
+	background-color: rgba(0, 0, 0, 0.2);
+	padding: 20px;
+	margin: 30px auto;
+}
+
+input[type="submit"] {
+	width: 100%;
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+h2 {
+	text-align: center;
+}
+
+#esquerda {
+	width: 35%;
+	height: 500px;
+	float: left;
+}
+
+#direita {
+	width: 65%;
+	height: 500px;
+	float: right;
+}
+
+table {
+	background-color: rgba(0, 0, 0, 0.2);
+	width: 90%;
+	margin: 30px auto;
+	border: 1px solid black;
+	border-radius: 10px;
+}
+
+tr, th {
+	line-height: 30px;
+	border-radius: 10px;
+}
+
+tr#titulo {
+	font-weight: bold;
+	background-color: rgba(0, 0, 0, 0.6);
+	color: #FFF;
+}
+
+td {
+	padding: 0 5px;
+	text-align: center;
+}
+
+a {
+	background-color: #FFF;
+	color: #000;
+	padding: 5px;
+	margin: 0 5px;
+	text-decoration: none;
+	border-radius: 10px;
+}
+
+a:hover {
+	background-color: #DDD;
+	border: 0.5px solid #777;
+}
+
+.aviso {
+	width: 90%;
+	height: 50px;
+	margin: 30px auto 0 auto;
+}
+
+img {
+	width: 50px;
+	display: block;
+	float: left;
+}
+
+h4 {
+	float: left;
+	line-height: 50px;
+}
