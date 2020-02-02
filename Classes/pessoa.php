@@ -1,5 +1,4 @@
 <?php
-
 class Pessoa {
 
 	private $pdo;
@@ -8,6 +7,7 @@ class Pessoa {
 	public function __construct($host, $dbname, $user, $senha) {
 		try {
 			$this->pdo = new PDO("mysql:host=" . $host . ";dbname=" . $dbname, $user, $senha);
+			$this->pdo->exec("set names utf8");
 		}
 		catch (PDOException $e) {
 			echo "Erro com Banco de Dados: " . $e->getMessage();
@@ -77,5 +77,4 @@ class Pessoa {
 	}
 
 }
-
 ?>

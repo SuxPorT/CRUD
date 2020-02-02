@@ -1,8 +1,7 @@
 <?php
 require_once("Classes/pessoa.php");
 
-$p = new Pessoa("localhost", "CRUDPDO", "root", "");
-
+$p = new Pessoa("localhost", "crud_pdo", "root", "");
 ?>
 
 <!DOCTYPE html>
@@ -10,11 +9,10 @@ $p = new Pessoa("localhost", "CRUDPDO", "root", "");
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>Cadastro Pessoas</title>
+	<title>Cadastro de Pessoas</title>
 </head>
 <body>
 	<?php
-
 	if (isset($_POST["nome"])) {
 		// Editar dados
 		if (isset($_GET["id_up"]) && !empty($_GET["id_up"])) {
@@ -65,16 +63,13 @@ $p = new Pessoa("localhost", "CRUDPDO", "root", "");
 		}
 
 	}
-
 	?>
 
 	<?php
-
 	if (isset($_GET["id_up"])) {
 		$id_update = addslashes($_GET["id_up"]);
 		$res = $p->buscarDadosPessoa($id_update);
 	}
-
 	?>
 
 	<section id="esquerda">
@@ -143,11 +138,9 @@ $p = new Pessoa("localhost", "CRUDPDO", "root", "");
 </html>
 
 <?php
-
 if (isset($_GET["id"])) {
 	$id_pessoa = addslashes($_GET["id"]);
 	$p->excluirPessoa($id_pessoa);
 	header("location: index.php");
 }
-
 ?>
