@@ -1,5 +1,5 @@
 <?php
-require_once("Classes/pessoa.php");
+require_once("classes/pessoa.php");
 
 $p = new Pessoa("localhost", "crud_pdo", "root", "");
 ?>
