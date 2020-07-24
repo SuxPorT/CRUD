@@ -1,7 +1,7 @@
 <?php
 require_once("classes/pessoa.php");
 
-$p = new Pessoa("localhost", "crud_pdo", "root", "");
+$p = new Pessoa("localhost", "crud_pdo", "user", "test_user");
 ?>
 
 <!DOCTYPE html>
