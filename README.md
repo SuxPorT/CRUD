@@ -8,7 +8,7 @@ Site com projeto hospedado: http://crud-system.epizy.com/
 	- :blue_book: PHP 7.3.12
 
 ## Layout
-![layout](https://user-images.githubusercontent.com/51892110/88860886-22c71b00-d1d3-11ea-9700-e0b6224b1a3d.png)
+![layout](https://user-images.githubusercontent.com/51892110/88864762-48a4ed80-d1dc-11ea-85f6-e5f4d41cfcea.png)
 
 ## Finalidade
 Projeto criado com o propósito de criar um CRUD com MySQL e PHP.
