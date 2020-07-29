@@ -1,8 +1,8 @@
 <?php
 	require_once("classes/person.php");
     /* Parâmetros da classe PDO
-    DB Name: "crud_system"
     Host: "localhost"
+    DB Name: "crud_system"
     Username: "user"
     Password: "test_user" */
 	$person = new Person("localhost", "crud_system", "user", "test_user");
